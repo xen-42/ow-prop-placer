@@ -17,6 +17,8 @@ public class PropPlacerMenu : MonoBehaviour
 
     private HashSet<string> _paths = new();
 
+    private Vector2 _scrollPosition;
+
     public static bool visible;
 
     public void Start()
@@ -64,6 +66,7 @@ public class PropPlacerMenu : MonoBehaviour
         if (_paths.Count > 0)
         {
             GUILayout.Label("Quick select previous path:");
+            _scrollPosition = GUILayout.BeginScrollView(_scrollPosition);
             foreach (var path in _paths)
             {
                 if (GUILayout.Button(path, GUILayout.ExpandWidth(false)))
@@ -71,9 +74,10 @@ public class PropPlacerMenu : MonoBehaviour
                     PropPlacerComponent.objectPath = path;
                 }
             }
+            GUILayout.EndScrollView();
         }
 
-        GUILayout.EndHorizontal();
+        GUILayout.EndArea();
     }
 
     public static void InitializePauseMenu(IPauseMenuManager pauseMenu)
