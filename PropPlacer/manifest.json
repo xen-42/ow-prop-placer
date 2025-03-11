@@ -2,9 +2,9 @@
   "$schema": "https://raw.githubusercontent.com/ow-mods/owml/master/schemas/manifest_schema.json",
   "filename": "PropPlacer.dll",
   "author": "xen",
-  "name": "PropPlacer",
+  "name": "Prop Placer",
   "uniqueName": "xen.PropPlacer",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "owmlVersion": "2.13.0",
   "dependencies": ["xen.NewHorizons"]
 }
