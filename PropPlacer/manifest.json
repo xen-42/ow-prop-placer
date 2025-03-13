@@ -4,7 +4,7 @@
   "author": "xen",
   "name": "Prop Placer",
   "uniqueName": "xen.PropPlacer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "owmlVersion": "2.13.0",
   "dependencies": ["xen.NewHorizons"]
 }
